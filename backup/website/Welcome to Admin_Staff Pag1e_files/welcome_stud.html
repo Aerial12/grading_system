@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Untitled Document</title>
+
+<link href="./fontstyle.css" rel="stylesheet" type="text/css">
+<link href="./tableBorder.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="./ajax.js.download"></script><script language="JavaScript" src="./common.js.download"></script><script language="JavaScript">
+function ReloadPage()
+{
+	SetFields();
+	document.grelease.submit();
+}
+function SetFields()
+{
+	document.grelease.grade_name.value= document.grelease.grade_for[document.grelease.grade_for.selectedIndex].text;
+	document.grelease.semester_name.value= document.grelease.semester[document.grelease.semester.selectedIndex].text;
+}
+</script></head>
+
+
+
+<body bgcolor="#578EAC">
+
+
+
+<form name="grelease" action="http://sas.ul.edu.ph/PARENTS_STUDENTS/acad_performance/grade_release.jsp" method="post">
+<input type="hidden" name="grade_name" value="Prelim Exam">
+<input type="hidden" name="semester_name" value="Summer">
+  <table bgcolor="#FFFFFF" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr bgcolor="#86AEC4">
+      <td height="25" colspan="3" align="center"><font color="#FFFFFF"><strong>::::
+        Grade Per Exam Period ::::</strong></font></td>
+    </tr>
+    <tr>
+      <td width="2%" height="25">&nbsp;</td>
+      <td height="25" colspan="2" style="font-size:18px; color:#FF0000; font-weight:bold"><strong>Please provide grade/term/school year from/to information.</strong></td>
+    </tr>
+  </tbody></table>
+
+  <table bgcolor="#FFFFFF" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td height="25">&nbsp;</td>
+      <td height="25" colspan="2">Student ID : <strong>19-0569-766</strong></td>
+    </tr>
+    <tr>
+      <td width="2%" height="25">&nbsp;</td>
+      <td height="25" colspan="2">Student name : <strong>Muyano, Ieson Louis Cabrera </strong></td>
+    </tr>
+    <tr>
+      <td height="25">&nbsp;</td>
+      <td height="25" colspan="2">Course/Major : <strong>BSCS
+        </strong></td>
+    </tr>
+    <tr>
+      <td height="25">&nbsp;</td>
+      <td width="30%" height="25">Year : <strong>3</strong></td>
+      <td width="68%">
+	  	  </td>
+    </tr>
+    <tr>
+      <td colspan="3" height="25"><hr size="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#FFFFFF" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td height="25" width="2%">&nbsp;</td>
+	  
+	  
+      <td width="51%" height="25"> Show&nbsp; 
+        <select name="grade_for" onchange="ReloadPage();" style="font-size:11px;">
+          
+<option value="Prelim Exam">Prelim Exam</option>
+<option value="Midterm Exam">Midterm Exam</option>
+<option value="Semi-Final Exam">Semi-Final Exam</option>
+<option value="Final Exam">Final Exam</option>
+      </select>        
+        Term: &nbsp;
+        
+      <select name="semester" onchange="ReloadPage();">
+        <option value="1">1st Semester</option>
+        
+        <option value="2">2nd Semester</option>
+        
+        <option value="3">3rd Semester</option>
+        
+        <option value="0" selected="">Summer</option>
+        
+      </select>
+
+
+
+	  </td>
+      <td width="32%" height="25">SY :
+        
+
+        <input name="sy_from" type="text" size="4" maxlength="4" value="2023" class="textbox_bigfont" onfocus="style.backgroundColor=&#39;#D3EBFF&#39;" onblur="style.backgroundColor=&#39;white&#39;" onkeyup="DisplaySYTo(&quot;grelease&quot;,&quot;sy_from&quot;,&quot;sy_to&quot;)">
+        to
+
+      <input name="sy_to" type="text" size="4" maxlength="4" value="2024" class="textbox_bigfont" onfocus="style.backgroundColor=&#39;#D3EBFF&#39;" onblur="style.backgroundColor=&#39;white&#39;" readonly="yes"></td>
+      <td width="15%"><input type="image" src="./form_proceed.gif"></td>
+    </tr>
+    <tr>
+      <td height="25" colspan="4"><hr size="1"></td>
+    </tr>
+</tbody></table>
+<script language="JavaScript">
+document.grelease.grade_name.value = document.grelease.grade_for[document.grelease.grade_for.selectedIndex].text;
+document.grelease.semester_name.value = document.grelease.semester[document.grelease.semester.selectedIndex].text;
+</script>
+
+	<table bgcolor="#FFFFFF" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td colspan="8" height="25">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="8" height="25" bgcolor="#86AEC4">&nbsp;</td>
+    </tr>
+  </tbody></table>
+</form>
+
+
+
+</body></html>

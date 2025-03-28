@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+  
+  <title>SchoolAutomate - Menu Template</title>
+	<link href="./main_link.css" rel="stylesheet" type="text/css">
+
+
+<script style="display: none !important;">
+    window.open    = function(){};
+    window.print   = function(){};
+  </script><script language="JavaScript" src="./ajax.js.download"></script><script language="javascript">
+function ajaxRefreshSession() {
+	
+	var objCOAInput = document.getElementById("update_session");
+	this.InitXmlHttpObject2(objCOAInput, 2, "checking session...");//I want to get innerHTML in this.retObj
+	if(this.xmlHttp == null) {
+		alert("Failed to init xmlHttp.");
+		return;
+	}
+	var strURL = "../../Ajax/AjaxInterface.jsp?methodRef=211";
+	this.processRequest(strURL);
+
+	window.setTimeout("ajaxRefreshSession()", 60000);
+}
+
+function ViewExamStat(strTempStudId) {
+	
+	parent.rightFrame.location = "../ADMISSION%20MODULE%20PAGES/single%20file%20items/ADMISSION%20FOR%20NEW_TRANSFERRE STUDENTS/applicant_sched_view.jsp?temp_id="+strTempStudId;
+}
+</script></head>
+<!--Home and logout button-->
+  
+
+
+
+<body onload="ajaxRefreshSession();">
+<div class="maincon">
+  <!--<form action="../../commfile/logout.jsp" method="post" target="_parent" name="form_">-->
+  	<div class="buttoncontainer">
+  		<a href="http://sas.ul.edu.ph/commfile/logout.jsp?logout_url=../index.htm" target="_top" style="text-decoration:none; color:#FFFFFF"><div class="buttonhome"><p>Home</p></div></a>
+  		
+			<a href="http://sas.ul.edu.ph/commfile/logout.jsp?logout_url=../PARENTS_STUDENTS/main_files/parents_students_bottom_content.htm&amp;body_color=#C39E60" target="_parent" style="text-decoration:none; color:#FFFFFF">
+			<div class="buttonlogout"><p>Logout</p></div>
+			</a>
+		
+  	</div>
+    <!--
+	<input type="hidden" name="logout_url" value="../PARENTS_STUDENTS/main_files/parents_students_bottom_content.htm">
+    <input type="hidden" name="body_color" value="#C39E60">
+  </form>
+	-->
+	
+	
+	
+  <div class="container">  
+  <ul>
+	
+		<li class="dropdown">
+		<!--
+		  <a href="../enrollment/enrollment_links.jsp" target="_self" data-toggle="dropdown">Enrollment</a>      
+		-->
+		<a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/main_files/parents_students_main_links.jsp#" data-toggle="dropdown">Enrollment<i class="icon-arrow open"></i></a>
+		<ul class="dropdown-menu show">
+			
+				
+				<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/enrollment/subjects_enrolled.jsp" target="rightFrame">Subjects Enrolled</a></li>
+				<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/enrollment/schedule.jsp" target="rightFrame">Subject Load Schedule</a></li>
+				<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/enrollment/fees_paid_enrollment.jsp" target="rightFrame">Fees Paid During  Enrollment</a></li>
+				<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/enrollment/changed_subjects.jsp" target="rightFrame">Changed Subjects</a></li>
+			
+			
+		</ul>
+		</li>
+		<li class="dropdown">
+		  <a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/main_files/parents_students_main_links.jsp#" data-toggle="dropdown">Student Account<i class="icon-arrow open"></i></a>
+		  <ul class="dropdown-menu show">
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/accounts/student_ledger.jsp" target="rightFrame">Ledger</a></li>
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/accounts/pmt_schedule.jsp" target="rightFrame">Periodic Dues</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown">
+		  <a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/main_files/parents_students_main_links.jsp#" data-toggle="dropdown">Academic Performance<i class="icon-arrow open"></i></a>
+		  <ul class="dropdown-menu show">
+
+				<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/acad_performance/stud_cur_residency_eval.jsp" target="rightFrame">Check List</a></li>
+				
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/acad_performance/cm_assignment.jsp" target="rightFrame">Class Assignment</a></li>
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/acad_performance/class_attendance.jsp" target="rightFrame">Class Attendance</a></li>
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/acad_performance/campus_attendance.jsp" target="rightFrame">Campus Attendance</a></li>
+			<li><a href="http://sas.ul.edu.ph/faculty_acad/stud/stud_acad.jsp?is_student=1" target="rightFrame">Awards/Achievements</a></li>
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/acad_performance/fieldwork_ojt.jsp" target="rightFrame">Field Work Profile/OJT</a></li>
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/acad_performance/grade_release.jsp" target="rightFrame">Grading Per Exam Period</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown">
+		  <a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/main_files/parents_students_main_links.jsp#" data-toggle="dropdown">Non-Acad Performance<i class="icon-arrow"></i></a>
+		  <ul class="dropdown-menu">
+			<li><a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/non_acad_performance/organizational_membership.jsp" target="rightFrame">Membership</a></li>
+			<li><a href="http://sas.ul.edu.ph/faculty_acad/stud/stud_non_acad.jsp?is_student=1" target="rightFrame">Awards/Achievements</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown">
+		  <a href="http://sas.ul.edu.ph/ADMIN_STAFF/sao/vio_conflict/vio_conflict.jsp?is_student=1&amp;show_all_sem=1" target="rightFrame" data-toggle="dropdown">Discipline Monitoring</a>      
+		</li>
+		<li class="dropdown">
+		  <a href="http://sas.ul.edu.ph/PARENTS_STUDENTS/main_files/parents_students_main_links.jsp#" data-toggle="dropdown">Personal Information<i class="icon-arrow open"></i></a>
+		  <ul class="dropdown-menu show">
+
+			<li><a href="http://sas.ul.edu.ph/my_home/stud_personal_info_page.jsp" target="rightFrame">View Personal Info</a></li>
+			<li><a href="http://sas.ul.edu.ph/my_home/stud_personal_info_page.jsp?print=1" target="rightFrame">Print Personal Info</a></li>
+
+			<li><a href="http://sas.ul.edu.ph/my_home/change_password.jsp?bgcol=9FBFD0&amp;headercol=47768F" target="rightFrame">Change Password</a></li>
+	
+		  </ul>
+		</li>
+
+		<li class="dropdown"><a href="http://sas.ul.edu.ph/lms/" target="_top" data-toggle="dropdown">Library</a></li>
+	
+
+  </ul>
+</div>
+
+</div>
+
+<label id="update_session" style="font-size:0px;">-- Keeping Session Alive --
+
+
+</label>
+  <script>		
+    // Dropdown Menu
+var dropdown = document.querySelectorAll('.dropdown');
+var dropdownArray = Array.prototype.slice.call(dropdown,0);
+dropdownArray.forEach(function(el){
+	var button = el.querySelector('a[data-toggle="dropdown"]'),
+			menu = el.querySelector('.dropdown-menu'),
+			arrow = button.querySelector('i.icon-arrow');
+	if(!menu)
+		return;
+		
+	button.onclick = function(event) {
+		if(!menu.hasClass('show')) {
+			menu.classList.add('show');
+			menu.classList.remove('hide');
+			arrow.classList.add('open');
+			arrow.classList.remove('close');
+			event.preventDefault();
+		}
+		else {
+			menu.classList.remove('show');
+			menu.classList.add('hide');
+			arrow.classList.remove('open');
+			arrow.classList.add('close');
+			event.preventDefault();
+		}
+	};
+})
+
+Element.prototype.hasClass = function(className) {
+    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+};
+
+function LoadAdmission()
+{
+	//load two pages in both frames ;-)
+	parent.leftFrame.location="../ADMISSION MODULE PAGES/single file items/ADMISSION FOR NEW_TRANSFERRE STUDENTS/adm_new_transferee_links.jsp";
+	parent.rightFrame.location="../ADMISSION MODULE PAGES/single file items/registration_page.jsp";
+	//location="../ADMISSION MODULE PAGES/single file items/ADMISSION FOR NEW_TRANSFERRE STUDENTS/index_newstud.htm";
+
+}
+  </script>
+
+
+
+</body></html>
